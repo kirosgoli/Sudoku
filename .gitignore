@@ -4,3 +4,12 @@
 
 /Sudoku/Sudoku.Console/obj
 /Sudoku/.vs/Sudoku/FileContentIndex
+/Sudoku/Sudoku.GUI/obj
+/Sudoku/Sudoku.MVC/obj
+/Sudoku/Sudoku.Application/obj
+/Sudoku/Sudoku.Application/bin/Debug/net7.0
+/Sudoku/Sudoku.Core/bin/Debug/net7.0
+/Sudoku/Sudoku.Core/obj
+/Sudoku/Sudoku.Infrastructure/bin/Debug/net7.0
+/Sudoku/Sudoku.Infrastructure/obj
+/Sudoku/Sudoku.MVC/bin/Debug/net7.0
