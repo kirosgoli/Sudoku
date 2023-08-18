@@ -13,3 +13,5 @@
 /Sudoku/Sudoku.Infrastructure/bin/Debug/net7.0
 /Sudoku/Sudoku.Infrastructure/obj
 /Sudoku/Sudoku.MVC/bin/Debug/net7.0
+/Sudoku/Sudoku.Infrastructure_Tests/bin/
+/Sudoku/Sudoku.Infrastructure_Tests/obj/

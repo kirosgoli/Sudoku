@@ -1,4 +1,6 @@
-﻿using Sudoku.Core.Interfaces;
+﻿using Sudoku.Application.Exceptions;
+using Sudoku.Application.Translations;
+using Sudoku.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +13,10 @@ namespace Sudoku.Infrastructure.Sources
     internal abstract class FileSource : ISource<string>
     {
 
-        protected bool ValidatePath(string path)
+        protected void ValidatePath(string path)
         {
-            return false;
+            if (string.IsNullOrEmpty(path)) throw new SourceException(Messages.PATH_IS_EMPTY_OR_NULL);
+            if (!System.IO.File.Exists(path)) throw new SourceException(Messages.FILE_DO_NOT_EXISTS);
         }
 
         public abstract Core.Models.Sudoku Convert(string path);

@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Sudoku.Application\Sudoku.Application.csproj" />
     <ProjectReference Include="..\Sudoku.Core\Sudoku.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(AssemblyName)_Tests" />
   </ItemGroup>
 
 </Project>
